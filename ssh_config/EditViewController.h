@@ -10,6 +10,7 @@
 
 @interface EditViewController : NSViewController
 
+@property (strong) IBOutlet NSTextField *secretKeyField;
 
 @end
 
