@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2F47C01A6BDDDD006A1524 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F47BF1A6BDDDD006A1524 /* EditViewController.m */; };
 		0E3FA3A11A66A1840035DFBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FA3A01A66A1840035DFBD /* AppDelegate.m */; };
 		0E3FA3A31A66A1840035DFBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FA3A21A66A1840035DFBD /* main.m */; };
 		0E3FA3A61A66A1840035DFBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FA3A51A66A1840035DFBD /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E2F47BE1A6BDDDD006A1524 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		0E2F47BF1A6BDDDD006A1524 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		0E3FA39A1A66A1840035DFBD /* ssh_config.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ssh_config.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E3FA39E1A66A1840035DFBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E3FA39F1A66A1840035DFBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 		0E3FA39C1A66A1840035DFBD /* ssh_config */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F47BE1A6BDDDD006A1524 /* EditViewController.h */,
+				0E2F47BF1A6BDDDD006A1524 /* EditViewController.m */,
 				0E3FA39F1A66A1840035DFBD /* AppDelegate.h */,
 				0E3FA3A01A66A1840035DFBD /* AppDelegate.m */,
 				0E3FA3A41A66A1840035DFBD /* ViewController.h */,
@@ -222,6 +227,7 @@
 				0E3FA3A31A66A1840035DFBD /* main.m in Sources */,
 				0E3FA3A91A66A1840035DFBD /* ssh_config.xcdatamodeld in Sources */,
 				0E3FA3A11A66A1840035DFBD /* AppDelegate.m in Sources */,
+				0E2F47C01A6BDDDD006A1524 /* EditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +414,7 @@
 				0E3FA3BF1A66A1840035DFBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E3FA3C01A66A1840035DFBD /* Build configuration list for PBXNativeTarget "ssh_configTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +423,7 @@
 				0E3FA3C21A66A1840035DFBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
