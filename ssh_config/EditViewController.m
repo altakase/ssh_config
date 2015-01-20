@@ -44,5 +44,35 @@
     }
 }
 
+- (IBAction)onSubmit:(id)sender {
+    NSString *path = @"file://";
+    NSString *homeDirectory = NSHomeDirectory();
+    path = [path stringByAppendingFormat:@"%@/config.generated", homeDirectory];
+    
+    NSURL *URL =  [NSURL URLWithString:path];
+    NSString *string = [NSString stringWithFormat:@"HOST %@\n"
+                        "  HostName %@\n"
+                        "  Port %@\n"
+                        "  User %@\n"
+                        "  IdentityFile %@\n"
+                        , [_serverNameField stringValue]
+                        , [_hostNameField stringValue]
+                        , [_portField stringValue]
+                        , [_userNameField stringValue]
+                        , [_secretKeyField stringValue]];
+    
+    NSLog(@"%@", string);
+    NSError *error;
+    BOOL ok = [string writeToURL:URL atomically:YES
+                        encoding:NSUTF8StringEncoding error:&error];
+    if (!ok) {
+        // an error occurred
+        NSLog(@"Error writing file at %@\n%@",
+              path, [error localizedFailureReason]);
+        // implementation continues ...
+    }
+    [self dismissController: nil];
+}
+
 
 @end

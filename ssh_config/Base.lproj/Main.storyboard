@@ -827,6 +827,9 @@
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="onSubmit:" target="bgB-Xs-iHZ" id="xK5-In-1hJ"/>
+                                </connections>
                             </button>
                             <button id="hBD-dn-xVI">
                                 <rect key="frame" x="264" y="17" width="96" height="26"/>
@@ -943,7 +946,11 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="hostNameField" destination="bK3-CT-vzH" id="PE3-hb-qyH"/>
+                        <outlet property="portField" destination="vKQ-Ny-WVM" id="07O-1e-1gD"/>
                         <outlet property="secretKeyField" destination="bGx-MJ-MZP" id="new-Tm-U6y"/>
+                        <outlet property="serverNameField" destination="6AM-wK-pTl" id="O77-2m-G55"/>
+                        <outlet property="userNameField" destination="YXK-GZ-7oO" id="g1e-OY-xBy"/>
                     </connections>
                 </viewController>
                 <customObject id="mss-I3-iRl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -10,6 +10,10 @@
 
 @interface EditViewController : NSViewController
 
+@property (strong) IBOutlet NSTextField *serverNameField;
+@property (strong) IBOutlet NSTextField *hostNameField;
+@property (strong) IBOutlet NSTextField *portField;
+@property (strong) IBOutlet NSTextField *userNameField;
 @property (strong) IBOutlet NSTextField *secretKeyField;
 
 @end
